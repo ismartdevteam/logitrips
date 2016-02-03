@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context=".LoginAc">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_det_background" />
+    <ImageView
+        android:id="@+id/search_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/destination"
+            android:textColor="@color/half_opacity_white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/oval_edit"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/search_destination_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:dropDownWidth="200dp"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spinner"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/pick_up_date"
+            android:textColor="@color/half_opacity_white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/search_pick_date_edit"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/oval_edit"
+
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+            <ImageView
+                android:id="@+id/search_pick_date_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+              android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pick_date" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/drop_off_date"
+            android:textColor="@color/half_opacity_white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/search_drop_date_edit"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/oval_edit"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="25dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+            <ImageView
+                android:id="@+id/search_drop_date_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pick_date" />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/search_find_btn"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/oval_btn_white"
+            android:text="@string/find_tour"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/searh_skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+
+            android:text="@string/skip_now"
+            android:textColor="@color/half_opacity_white" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

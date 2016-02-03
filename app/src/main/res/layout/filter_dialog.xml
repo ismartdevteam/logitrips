@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+
+    android:background="@drawable/dialog_back"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/choose_filter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_gray"
+            android:layout_height="wrap_content"
+            android:text="@string/location"/>
+    <Spinner
+        android:id="@+id/filter_dialog_location_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+
+        android:textColor="@color/text_gray"
+        android:layout_height="wrap_content"
+        android:text="@string/class_type"/>
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:paddingTop="10dp"
+        android:id="@+id/filter_class_type_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        segmentedgroup:sc_tint_color="@color/orange"
+        segmentedgroup:sc_checked_text_color="@android:color/white"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="10dp">
+
+        <RadioButton
+            android:id="@+id/filter_any_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/any"
+            android:textSize="12sp"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/filter_prem_btn"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/premium"
+            style="@style/RadioButton" />
+        <RadioButton
+            android:id="@+id/filter_bus_btn"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/business"
+            style="@style/RadioButton" />
+        <RadioButton
+            android:id="@+id/filter_stan_btn"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/standart"
+            style="@style/RadioButton" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/filter_apply_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@android:color/white"
+        android:text="@string/apply_filter"
+        android:background="@color/orange"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
